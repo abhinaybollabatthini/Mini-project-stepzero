@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbar{
+   position: fixed;
+   top: 0px;
+   left: 50px;
+   right: 150px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #fff;
+   padding-top: 30px;
+    z-index: 100;
+  
+}
+.left-props{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+
+}
+.left-props a img {
+    width: 35px; cursor: pointer;
+}
+.left-props i{
+    font-size: 30px;
+    cursor: pointer;
+}
+.home-icon:hover{
+    color: #0606f3;
+}
+.right-props{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.right-props li {
+    cursor: pointer;
+    padding: 11px 20px;
+    border-radius: 20px;
+}
+.right-props li:hover{
+    background-color: #0606f3;
+    color: whitesmoke;
+}
+.right-props a{
+    text-decoration: none;
+    color: inherit;
+}
+.main{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    height: auto;
+    margin-top: 300px;
+}
+.replacement-content{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 80vh;
+    
+}
+.main-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-background-body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.info{
+    background-color: #0867d2;
+    padding: 20px;
+    border-radius: 25px;
+    color: whitesmoke;
+    width: 35%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.info h1{
+    margin-bottom: 25px;
+    color: whitesmoke;
+}
+.info p{
+    letter-spacing: 1.01px;
+    line-height: 1.5;
+    color: #202020;
+}
+.main-img-div{
+    width: 40%;
+
+}
+.main-img-div img{
+    border-radius: 25px;
+    width: 550px;
+    height: auto;
+    box-shadow: 5px -5px 3px 4px #6d696936;
+}
+.forms{
+    margin-top: 150px;
+    text-align: center;
+   display: flex;
+}
+
+.open-flows, .ninja , .analyst{
+    max-width: 350px;
+    margin: 25px auto;
+    padding: 10px;
+    background-color: #0704dc;
+    border-radius: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: height 0.5s ease-out, opacity 0.5s ease-out ;
+    
+}
+.ninja , .analyst {
+    background-color: #070580;
+}
+.open-flows:hover{
+    background-color: #0867d2;
+}
+
+.ninja:hover , .analyst:hover {
+    background-color: #0867d2;
+}
+.form{
+    width: 75%;
+    max-width: 500px;
+    margin: 150px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C0C0C0;
+    padding: 35px 40px;
+    border-radius: 5px;
+}
+.form form {
+    display: flex;
+    gap: 40px;
+}
+.form form .details{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.notes {
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+textarea{
+    width: 200px;
+    height: 50px;
+}
+button {
+    margin-top: 25px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+
+}
+button:hover{
+    background-color: #0606f3;
+}
+.form input {
+    padding: 6px 15px 6px 6px ;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+
+}
+.heading{
+    display: flex; gap: 15px ; align-items: center; justify-content: center;
+}
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 515px) {
+    .navbar{
+        left: 0;
+        right: 0;
+    }
+    .left-props a img{
+        width: 25px;
+    }
+    .left-props i{
+        font-size: 25px;
+    }
+    .left-props{
+        margin-left: 10px;
+        gap: 10px;
+    }
+    .right-props{
+        gap: 8px;
+        margin-right: 10px;
+    }
+    .right-props li{
+        background-color: #C0C0C0;
+        font-size: 10px;
+        border-radius: 1px;
+        padding: 5px 5px;
+    }
+    .replacement-content{
+        top: 50px;
+    }
+    .main-background-body{
+       display: block;
+    }
+    .info{
+        width: 90%;
+        margin: 30px auto;
+    }
+    .info h1{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .info p{
+        letter-spacing: normal;
+        line-height: normal;
+        font-size: 12px;
+    }
+    .main-img-div{
+        width: 90%;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .main-img-div img{
+        width: 98%;
+    }
+  }
+  
+  /* Smartphones (landscape) */
+  @media only screen and (min-width: 321px) {
+    /* styles */
+  }
+  
+  /* Smartphones (portrait) */
+  @media only screen and (max-width: 320px) {
+    /* styles */
+  }
+  
+  /* iPads (portrait and landscape) */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .navbar{
+        left: 35px;
+        right: 50px;
+    }
+    .main-background-body{
+        margin-top: 30px;
+        display: block;
+    }
+    .info{
+        width: 90%;
+        margin: 15px auto;
+    }
+    .info h1{
+        font-size: 20px;
+    }
+    .info p{
+        font-size: 14px;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+    .main-img-div{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .main-img-div img{
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+    }
+    
+  }
+  
+  /* iPads (landscape) */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* styles */
+  }
+  
+  /* iPads (portrait) */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* styles */
+  }
+  
+  /* Desktops and laptops */
+  @media only screen and (min-width: 1224px) {
+    
+  }
+  
+  /* Large screens */
+  @media only screen and (min-width: 1424px) and (max-width: 2561px) {
+  
+  
+    .left-props{
+    margin-left: 40px;
+  }
+  
+  }
+  
+
+ 
